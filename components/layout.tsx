@@ -78,6 +78,12 @@ export default function Layout({
             </h2>
           </>
         )}
+        <div>
+          {/* TODO: Add flex box */}
+          <Link href='/'>Home</Link>{' '}
+          <Link href='/blog'>Blog</Link>{' '}
+          <Link href='/projects'>Projects</Link>
+        </div>
       </header>
       <main>{children}</main>
       {!home && (
