@@ -9,7 +9,7 @@ export const siteTitle = "Simon El Nahas' blog";
 
 export default function Layout({
   children,
-  home,
+  home, //TODO: provide types
 }) {
   return (
     <div className={styles.container}>
