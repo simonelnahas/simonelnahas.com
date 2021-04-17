@@ -9,10 +9,8 @@ export const siteTitle = "Simon El Nahas' blog";
 
 export default function Layout({
   children,
-  home, //TODO: provide types
 }: {
   children: React.ReactNode;
-  home?: boolean;
 }) {
   return (
     <div className={styles.container}>
@@ -38,64 +36,28 @@ export default function Layout({
         />
       </Head>
       <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src='/images/pb.jpg'
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>
-              {name}
-            </h1>
-          </>
-        ) : (
-          <>
-            <Link href='/'>
-              <a>
-                <Image
-                  priority
-                  src='/images/pb.jpg'
-                  className={
-                    utilStyles.borderCircle
-                  }
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href='/'>
-                <a
-                  className={
-                    utilStyles.colorInherit
-                  }
-                >
-                  {name}
-                </a>
-              </Link>
-            </h2>
-          </>
-        )}
-        <div>
+        <>
+          <Image
+            priority
+            src='/images/pb.jpg'
+            className={utilStyles.borderCircle}
+            height={144}
+            width={144}
+            alt={name}
+          />
+          <h1 className={utilStyles.heading2Xl}>
+            {name}
+          </h1>
+        </>
+
+        <div className={styles.flexHorizontal}>
           {/* TODO: Add flex box */}
-          <Link href='/'>Home</Link>{' '}
+          <Link href='/'>About</Link>{' '}
           <Link href='/blog'>Blog</Link>{' '}
           <Link href='/projects'>Projects</Link>
         </div>
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href='/'>
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
     </div>
   );
 }
