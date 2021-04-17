@@ -10,6 +10,9 @@ export const siteTitle = "Simon El Nahas' blog";
 export default function Layout({
   children,
   home, //TODO: provide types
+}: {
+  children: React.ReactNode;
+  home?: boolean;
 }) {
   return (
     <div className={styles.container}>
