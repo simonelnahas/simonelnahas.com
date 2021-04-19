@@ -55,6 +55,7 @@ export default function Layout({
           <Link href='/'>About</Link>{' '}
           <Link href='/blog'>Blog</Link>{' '}
           <Link href='/projects'>Projects</Link>
+          <Link href='/fun'>Fun🥳</Link>
         </div>
       </header>
       <main>{children}</main>
