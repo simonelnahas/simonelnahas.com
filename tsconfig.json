@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/_app.js", "pages/posts/[id].js"  ],
+, "pages/_app.js", "pages/posts/[id].js", "lib/ga/index.js"  ],
   "exclude": [
     "node_modules"
   ]
