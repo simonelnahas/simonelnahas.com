@@ -11,14 +11,18 @@
   font-size: x-large;
   font: bold;
   transition: background 0.2s ease,
-    color 0.2s ease, box-shadow 0.2s ease;
+    color 0.2s ease, box-shadow 0.2s ease,
+    transform 800ms ease-out;
 }
 
 .button:hover {
   background-color: #0071f3b6;
+  transform: translateY(-3px);
+  transition: transform 400ms ease-out;
 }
 
 .button:active:hover {
   background-color: #0056b8;
   transform: translateY(3px);
+  transition: transform 100ms ease-out;
 }

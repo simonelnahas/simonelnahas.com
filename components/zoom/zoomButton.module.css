@@ -1,0 +1,25 @@
+.button {
+  padding: 1rem;
+  background: #0070f3;
+  box-shadow: -10px -10px 30px #fdfdfd44,
+    10px 10px 30px #0071f377;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  transition: transform 400ms ease-out,
+    box-shadow 400ms ease-out;
+}
+
+.button:hover {
+  background-color: #0071f3e7;
+  transform: translateY(-5px);
+  box-shadow: -20px -20px 40px #fdfdfd44,
+    20px 20px 40px #0071f377;
+  transition: box-shadow 400ms ease-out 100ms,
+    transform 400ms ease-out 100ms;
+}
+.button:active {
+  transform: translateY(2px);
+  transition: transform 100ms ease-out;
+}
