@@ -17,10 +17,7 @@ export default function Layout({
       <Head>
         <link rel='icon' href='/favicon.ico' />
         <title>Simon El Nahas</title>
-        <meta
-          name='title'
-          content='Simon El Nahas'
-        />
+
         <meta
           name='description'
           content='Personal website'
