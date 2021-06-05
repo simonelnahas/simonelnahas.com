@@ -1,0 +1,16 @@
+.header {
+  text-shadow: 2rem;
+}
+
+.signature {
+  stroke-dasharray: 559;
+  stroke-dashoffset: 559;
+  animation: sign 4s ease 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
