@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Simon El Nahas';
-export const siteTitle = "Simon El Nahas' blog";
+export const siteTitle = 'Simon El Nahas';
 
 export default function Layout({
   children,
@@ -18,7 +18,7 @@ export default function Layout({
         <link rel='icon' href='/favicon.ico' />
         <meta
           name='description'
-          content='my thougts'
+          content='Personal website'
         />
         <meta
           property='og:image'

@@ -1,20 +1,24 @@
 import Layout from '../components/layout';
 import styles from './baba.module.css';
+import Head from 'next/head';
 
 export default function Baba() {
   return (
     <Layout>
+      <Head>
+        <title>Happy Baba's Day</title>
+      </Head>
       <h1 className={styles.header}>
         Happy Baba's day!
       </h1>
       <p>
         To the man who introduced me to the world
         of technology and led me on a path to
-        build great things. I have dedicated this
-        website for you!
+        build great things. <br />I have dedicated
+        this website for you!
         <br />
         <br />
-        Sincerely,
+        Yours Sincerely,
       </p>
       <svg
         width='166'
