@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: simonelnahas.com
+Token: 23e94075aa4fdcf5566f141a7e11c59ad6ec3c20eb4f4cae2ae840ebefbd997a
