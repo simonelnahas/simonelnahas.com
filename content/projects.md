@@ -1,5 +1,16 @@
 # Selected Projects
 
+## MoveNation
+
+_Spring 2021 to now_
+
+Co-founder & CTO
+
+A city searcher for people looking to achieve
+financial independence by moving.
+
+[MoveNation.world](https://www.movenation.world/?utm_source=simons_personal_website&utm_medium=CV)
+
 ## LifeHorizon
 
 A productity WebApp that helps people create an
@@ -17,7 +28,7 @@ Firestore, Google Analytics, Firebase Auth.
 
 _Fall 2020_
 
-Co-founder & CTO of a startup.
+Co-founder & CTO
 
 A video communication application that allows
 people to move around in a virtual room. When
