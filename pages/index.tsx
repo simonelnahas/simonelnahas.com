@@ -13,9 +13,16 @@ export default function Home({ allPostsData }) {
     <Layout>
       <Head>
         <title>{siteTitle}</title>
+        <meta
+          name='description'
+          content="Simon El Nahas' personal website"
+          key='desc'
+        />
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I make complex things simple</p>
+        <p style={{ textAlign: 'center' }}>
+          I simplify
+        </p>
       </section>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}

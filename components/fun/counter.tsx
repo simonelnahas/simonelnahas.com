@@ -51,7 +51,7 @@ export default function Counter() {
   };
 
   return (
-    <h1>
+    <h2>
       This{' '}
       <button
         onClick={click}
@@ -61,6 +61,6 @@ export default function Counter() {
       </button>{' '}
       has been clicked {loading ? '...' : count}{' '}
       times.
-    </h1>
+    </h2>
   );
 }

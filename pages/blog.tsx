@@ -13,6 +13,11 @@ export default function Home({ allPostsData }) {
     <Layout>
       <Head>
         <title>{siteTitle}</title>
+        <meta
+          name='description'
+          content="Simon El Nahas' blog "
+          key='desc'
+        />
       </Head>
 
       <section

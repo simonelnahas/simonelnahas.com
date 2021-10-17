@@ -22,4 +22,7 @@
 .button:active {
   transform: translateY(2px);
   transition: transform 100ms ease-out;
+  box-shadow: 0 0 0 #fdfdfd44, 0 0 0 #0071f377;
+  transition: box-shadow 50ms ease-out 100ms,
+    transform 50ms ease-out 100ms;
 }

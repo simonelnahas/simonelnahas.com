@@ -54,8 +54,19 @@ export default function Layout({
           {/* TODO: Add flex box */}
           <Link href='/'>About</Link>{' '}
           <Link href='/blog'>Blog</Link>{' '}
-          <Link href='/projects'>Projects</Link>
-          <Link href='/fun'>Fun🥳</Link>
+          <a
+            href='https://twitter.com/simonelnahas'
+            target='_blank'
+          >
+            Twitter
+          </a>{' '}
+          <a
+            href='https://www.linkedin.com/in/simonelnahas/'
+            target='_blank'
+          >
+            LinkedIn
+          </a>{' '}
+          <Link href='/fun'>Fun</Link>
         </div>
       </header>
       <main>{children}</main>
