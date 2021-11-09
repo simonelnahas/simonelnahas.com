@@ -6,7 +6,7 @@ export default function ZoomButton() {
       <h2>Simon's Meeting Room</h2>
       <a
         className={styles.button}
-        href='https://meet.google.com/rbw-huzt-aud'
+        href='https://meet.google.com/rsf-guhj-bou'
         target='_blank'
       >
         Join Meeting
