@@ -1,5 +1,5 @@
 import Layout from '../components/layout';
-import ZoomButton from '../components/zoom/zoomButton';
+import MeetButton from '../components/zoom/zoomButton';
 import Head from 'next/head';
 
 export default function Fun() {
@@ -8,7 +8,7 @@ export default function Fun() {
       <Head>
         <title>Simon's Meeting Room</title>
       </Head>
-      <ZoomButton />
+      <MeetButton />
     </Layout>
   );
 }

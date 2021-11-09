@@ -6,10 +6,10 @@ export default function ZoomButton() {
       <h2>Simon's Meeting Room</h2>
       <a
         className={styles.button}
-        href='https://dtudk.zoom.us/j/4542427774'
+        href='https://meet.google.com/rbw-huzt-aud'
         target='_blank'
       >
-        Join Zoom Meeting
+        Join Meeting
       </a>
     </>
   );
