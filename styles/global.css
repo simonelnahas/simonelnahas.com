@@ -47,3 +47,12 @@ blockquote a {
   text-decoration: underline;
   margin-left: 5px;
 }
+
+code {
+  margin-right: 0.2em;
+  border-radius: 4px;
+  color: #333;
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 0.1em 0.3em;
+}

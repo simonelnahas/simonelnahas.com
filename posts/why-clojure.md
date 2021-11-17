@@ -9,7 +9,7 @@ date: '2021-11-17'
 
 [![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fpublic-simon-el-nahas%2FqvmSSjKUTI.png?alt=media&token=4d0a6573-9251-4b26-a417-196ccc70694d)](https://twitter.com/simonelnahas/status/1447241868765503491)
 
-### Programming languages
+### Our mission
 
 In April 2021 I co-founded our startup
 [MoveNation](https://www.movenationnow.com/) as
@@ -26,11 +26,13 @@ require every ounce of technical skill to
 accomplish.
 
 Embarking on this journey I took time to think and
-consult people that were already successful. I
+I consulted people that were already successful. I
 wanted to decide on what tools I needed to pack so
 to increase our chances of success and even give
 us a competitive advantage. More concretely I had
 to choose our tech stack.
+
+### Programming languages
 
 The programming language is arguably one of the
 most important aspects of the tech stack since it
@@ -43,9 +45,6 @@ for a new security-oriented language. So what
 convinced me that Clojure was superior? And why
 did I choose to use it for my startup?
 
-Let's first rewind a little and let me tell you
-how I discovered Clojure
-
 ### What is Clojure?
 
 Lisp (List Programming) was
@@ -56,6 +55,9 @@ will be used interchangeably throughout this
 article.
 
 ## Why should I learn Clojure?
+
+Let's first rewind a little and let me tell you
+how I discovered Clojure.
 
 ### How I found Clojure
 
@@ -73,11 +75,11 @@ In other words, he had my attention. So I decided
 to read his book
 [Hackers and Painters](http://www.paulgraham.com/hackpaint.html).
 Apart from describing why nerds are unpopular, he
-also describes the benefits the Lisp gave his
-startup in a very intellectual and entertaining
-way. This was my first encounter with the language
-and Paul Graham had succeeded in getting me
-curious about it.
+also describes the benefits Lisp gave his startup
+in a very intellectual and entertaining way. This
+was my first encounter with the language and Paul
+Graham had succeeded in getting me curious about
+it.
 
 Robert C. Martin more commonly known as Uncle Bob
 co-authored the agile manifesto, which shaped an
@@ -156,18 +158,19 @@ become obsolete**:
 ### REPL driven development
 
 With REPL driven development small parts of the
-code are run in isolation similar to creating
-several small unit tests before adding the
-function to the bigger program. In this way, we
-can test our units, before putting them together.
-Similar to you would smell a strawberry before
-adding it into a smoothie. The focus is on
-shortening the feedback loop by seeing the result
-of changes in the code immediately.
+code (all the way down to each expression/form)
+are run in isolation similar to creating several
+small unit tests before adding the function to the
+bigger program. In this way, we can test our
+units, before putting them together. Similar to
+how you would smell a strawberry before adding it
+into a smoothie. The focus is on shortening the
+feedback loop by seeing the result of changes in
+the code immediately.
 
 See an entertaining example
 [here](https://www.youtube.com/watch?v=KZjFVdU8VLI)
-of REPL driven development (also called
+of REPL driven development (also referred to as
 [interactive programming](https://clojureverse.org/t/misconceptions-about-repl-driven-development/6988/21))
 with the beloved flappy bird.
 
@@ -184,33 +187,28 @@ could be applied to add type checks.
 Another example of this is in JavaScript where
 async `await` was introduced in ECMAScript 2017,
 developers could finally simplify a lot of their
-code. But in the world of Clojure this would be
-implemented as a macro that any developer could
-implement themselves. ClojureScript developers can
-even develop a new language feature like `await`
-with a macro and deploy it to all browsers on the
-same day. In fact they already had and were using
+code. In Clojure this could be implemented as a
+macro. In fact they already had and were using
 this functionality (`core.async` and `go`) long
-before async `await` was published. See
+before async `await` was published, as it can be
+seen in
 [this talk](https://youtu.be/TVJa-V6U-XI?t=1601)
-by David Nolen about it.
+by David Nolen.
 
-Similarly, I have previously enjoyed using
-`F#`/`OCaml`'s `match` statements, which is not a
-part of the core Clojure language. But luckily it
-can be imported as a macro and be used in programs
-on equal grounds as all other Clojure keywords.
-This is not possible in other languages. See Sam
+Similarly, I have previously enjoyed using F# or
+OCaml's `match` statements, which is not a part of
+the core Clojure language. But luckily it can be
+imported as a macro and be used in programs on
+equal grounds as all other Clojure keywords. This
+is not possible in other languages. See Sam
 Tobin-Hochstadts publication about `match` on
-[arXiv.org](https://arxiv.org/pdf/1106.2578.pdf).
+arXiv.org
+[here](https://arxiv.org/pdf/1106.2578.pdf).
 
 ### FP vs OO
 
 Clojure is a functional programming language, but
-it also has polymorphism. There is not a tradeoff
-between Functional Programming and Object-Oriented
-Programming, since they are orthogonal and can
-therefore easily coexist. This means that if you
+it also has polymorphism. This means that if you
 are coming from OO you don't have to leave
 polymorphism behind.
 
@@ -241,23 +239,20 @@ of the concepts could be usable in other contexts
 and make me a better programmer in general.
 
 I went through the book on
-www.learn-clojurescript.com recommended by
+[www.learn-clojurescript.com](www.learn-clojurescript.com)
+recommended by
 [Conor White-Sullivan](https://twitter.com/Conaw)
 CEO & Founder of
 [RoamResearch](https://roamresearch.com/). Then I
-decided to try it out on my own.
-
-Implementing a simple TicTacToe game I was very
-impressed by the succinctness of the language and
-REPL driven development made it super fast to
-experiment with potential solutions.
-
-Clojure had passed my initial tests and my
-confidence in the language had grown tremendously.
-
-Shortly after came the time for me to decide on
-the tech stack of our startup. In doing that I
-wanted to
+decided to try it out on my own. Implementing a
+simple TicTacToe game I was very impressed by the
+succinctness of the language and REPL driven
+development made it super fast to experiment with
+potential solutions. Clojure had passed my initial
+tests and my confidence in the language had grown
+tremendously. Shortly after came the time for me
+to decide on the tech stack of our startup. In
+doing that I wanted to
 
 ## Why use Clojure in a startup?
 
@@ -290,25 +285,25 @@ necessary training for them to be productive. In
 Marcus Rydberg Founder & CTO of
 [Luminare](https://www.luminaremed.com/) argues
 that since Clojure is such a small language, it is
-easy to learn.
+easy to learn—once you get used to the
+parentheses.
 
 #### Niche benefits
 
-On the other hand, the developers already within
-this niche are very passionate about the language.
-There are a lot of people using it for hobby
-projects, which hope to one day spend their whole
-day developing in Clojure. It might even be easier
-to hire within the community since developers
-aren't as picky with other job factors as long as
-they can use a language they like. Many companies
-struggle with hiring developers since their only
-lever is cash compensation. Using a niche
-technology and leveraging its community might be a
-viable strategy for overcoming this struggle.
-Especially if you can manage to choose a growing
-community and benefit from its growth as you
-scale.
+The developers already within this niche are very
+passionate about the language. There are a lot of
+people using it for hobby projects, which hope to
+one day spend their whole day developing in
+Clojure. It might even be easier to hire within
+the community since developers aren't as picky
+with other job factors as long as they can use a
+language they like. Many companies struggle with
+hiring developers since their only lever is cash
+compensation. Using a niche technology and
+leveraging its community might be a viable
+strategy for overcoming this struggle. Especially
+if you can manage to choose a growing community
+and benefit from its growth as you scale.
 
 > [...] the most accurate measure of the relative
 > power of programming languages might be the
@@ -323,11 +318,12 @@ the fact that Clojure developers are often quite
 senior. Clojure is seldom someones first language
 since one often needs to experience the
 shortcomings of other languages to be motivated to
-overcome the initial learning curve of Clojure.
-This makes the average Clojurian (a person within
-the Clojure community) quite knowledgeable. Having
-a high average level of knowledge among employees
-is very beneficial in running a company.
+overcome the steep but short learning curve of
+Clojure. This makes the average Clojurian (a
+person within the Clojure community) quite
+knowledgeable. Having a high average level of
+knowledge among employees is very beneficial in
+running a company.
 
 #### The backup plan
 
@@ -353,21 +349,22 @@ choosing Lisp as the core technology for a
 startup. His key ideas are: The average startup
 fails, so **don't be average**. Using a different
 language could be a core differentiator against
-competitors. His second most key idea is the
-**Blub Paradox**. If Lisp is so great then why
-doesn't everyone use it? It is because programmers
-can only compare the power of programming
-languages they know. Learning new languages
-requires changing a habit of thought, which is a
-very slow process. As a result, it will also take
-a long time before we adopt the most powerful one.
+competitors. Secondly he describes **the Blub
+Paradox**. If Lisp is so great then why doesn't
+everyone use it? It is because programmers can
+only compare the power of programming languages
+they know. Learning new languages requires
+changing a habit of thought, which is a very slow
+process. As a result, it will also take a long
+time before we adopt the most powerful one.
 
 ### Successful startups using Lisp
 
 If this language is so powerful and it has existed
 for so long there must be a lot of great examples
-of companies who have used it successfully. There
-is and here I have listed a few of them. A
+of companies who have used it successfully.
+Despite the Blub Paradox there are already great
+examples and here I have listed a few of them. A
 surprisingly similar story unfolds for each of
 them. Often it is a small startup beating a much
 larger company in their own game. The Lisp startup
@@ -434,8 +431,9 @@ developers often respond in less than 10 minutes.
 The is again one of the great benefits other
 languages don't offer. It has already helped me
 tremendously getting started and solving problems
-and I'm sure that our company could benefit from
-this even as we get more experts in-house.
+and I'm sure that our company could benefit
+greatly from this even as we get more experts
+in-house.
 
 ## Conclusion
 
