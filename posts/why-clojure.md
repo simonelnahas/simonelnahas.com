@@ -18,7 +18,7 @@ better place to live for less. We want to do that
 by creating a search engine that can crunch
 through massive amounts of data that are relevant
 to deciding where to live and match it to each
-persons lifestyle preferences and financial
+person's lifestyle preferences and financial
 situation.
 
 This is a very big and complex problem that will
@@ -27,19 +27,19 @@ accomplish.
 
 Embarking on this journey I took time to think and
 consult people that were already successful. I
-wanted to make a decision on what tools I needed
-to pack so to increase our chances of success and
-even give us a competitive advantage. More
-concretely I had to choose our tech stack.
+wanted to decide on what tools I needed to pack so
+to increase our chances of success and even give
+us a competitive advantage. More concretely I had
+to choose our tech stack.
 
 The programming language is arguably one of the
-most important aspects of the tech stack, since it
+most important aspects of the tech stack since it
 is probably also the hardest one to change later
 on. I have used a lot of different programming
 languages (Java, Python, R, Swift, VHDL, C#, F#,
 OCaml, ReasonML, Prolog, C, C++, JavaScript,
 TypeScript) and I even implemented the compiler
-for a new security oriented language. So what
+for a new security-oriented language. So what
 convinced me that Clojure was superior? And why
 did I choose to use it for my startup?
 
@@ -50,7 +50,7 @@ how I discovered Clojure
 
 Lisp (List Programming) was
 [invented](http://jmc.stanford.edu/articles/lisp.html)
-by John McCarthy in 1958. Clojure is Todays most
+by John McCarthy in 1958. Clojure is today's most
 popular implementation of Lisp. Clojure and Lisp
 will be used interchangeably throughout this
 article.
@@ -59,7 +59,7 @@ article.
 
 ### How I found Clojure
 
-Paul Graham graduated with a PhD in programming
+Paul Graham graduated with a Ph.D. in programming
 languages from
 [Harvard in 1990](https://dl.acm.org/doi/book/10.5555/917233).
 He then went on to start ViaWeb in 1995 and sold
@@ -85,7 +85,7 @@ entire industry. Later he published several books
 on software craftsmanship and is still more than
 20 years later a leader in the software industry
 for best practices with Clean Code as his mantra.
-Uncle bob has written several blog posts on
+Uncle Bob has written several blog posts on
 Clojure, but most profound is his statement here:
 
 > My favorite language of all, the language that I
@@ -99,19 +99,19 @@ Clojure, but most profound is his statement here:
 As I dove deeper to find companies using Clojure
 Today, I realized that
 [RoamResearch](https://roamresearch.com/),
-[Pitch](https://pitch.com/) and
+[Pitch](https://pitch.com/), and
 [Shortcut](https://shortcut.com/) (formerly
-Clubhouse)–which all had sprung up lately–all
-where using it as their core technology.
+Clubhouse)–which all had sprung up lately–all were
+using it as their core technology.
 
 ### Highest paid developers
 
 Having the skills of the future can be tough in
 the present moment if those skills aren't in
 demand. But luckily this is not the case with
-Clojure. In fact Clojure is the highest paying
+Clojure. In fact, Clojure is the highest paying
 language according to
-[StackOverflows Developer Surveys](https://insights.stackoverflow.com/survey/2021#top-paying-technologies-programming-scripting-and-markup-languages).
+[StackOverflow's Developer Surveys](https://insights.stackoverflow.com/survey/2021#top-paying-technologies-programming-scripting-and-markup-languages).
 
 ### Dynamic typing
 
@@ -122,8 +122,8 @@ dynamically typed language to TypeScript which
 adds static typing to JavaScript. So when I
 realized that Clojure was dynamically typed I was
 at first quite skeptical. With TypeScript and
-other static languages we get a lot of help in
-preventing run time bugs. But static typing
+other static languages, we get a lot of help in
+preventing run-time bugs. But static typing
 becomes a problem when the compiler prevents
 experimentation, then we wrestle the compiler to
 satisfy type constraints. Since Clojure itself can
@@ -134,13 +134,13 @@ clojure.spec.
 
 #### Use TDD not static typing
 
-The developer knows best the when to do which
-checks and tests. This can't be predicted by a
-compiler since the most accurate representation of
-the programs intended behavior is stored in the
-mind of the programmer. Therefore when the
-programmer describes the intended behavior with
-tests–**types become obsolete**:
+The developer knows best when to do which checks
+and tests. This can't be predicted by a compiler
+since the most accurate representation of the
+program's intended behavior is stored in the mind
+of the programmer. Therefore when the programmer
+describes the intended behavior with tests–**types
+become obsolete**:
 
 > You see, when a Java programmer gets used to
 > TDD, they start asking themselves a very
@@ -157,13 +157,13 @@ tests–**types become obsolete**:
 
 With REPL driven development small parts of the
 code are run in isolation similar to creating
-several small unit tests before adding it to the
-bigger program. In this way we can test our units,
-before putting them together. Similar to how we
-check the condition of a strawberry before adding
-it into a smoothie. The focus is on shortening the
-feedback loop by seeing the result of changes in
-the code immediately.
+several small unit tests before adding the
+function to the bigger program. In this way, we
+can test our units, before putting them together.
+Similar to you would smell a strawberry before
+adding it into a smoothie. The focus is on
+shortening the feedback loop by seeing the result
+of changes in the code immediately.
 
 See an entertaining example
 [here](https://www.youtube.com/watch?v=KZjFVdU8VLI)
@@ -175,42 +175,40 @@ with the beloved flappy bird.
 
 Macros make it possible to write code that writes
 code. Doing this one can extend the language to
-suit the specific problem at hand, wherein other
+suit the specific problem at hand, where in other
 languages you would have to wait for a new version
 of the language to introduce the needed feature.
-In the previous example I explained how this could
-be applied to add type checks.
+In the previous example, I explained how this
+could be applied to add type checks.
 
 Another example of this is in JavaScript where
 async `await` was introduced in ECMAScript 2017,
 developers could finally simplify a lot of their
 code. But in the world of Clojure this would be
 implemented as a macro that any developer could
-implement themselves. In fact ClojureScript
-developers can even develop a new language feature
-like `await` with a macro and deploy it to all
-browsers on the same day. In fact they already had
-and were using this functionality (`core.async`
-and `go`) long before async `await` was published.
-See
+implement themselves. ClojureScript developers can
+even develop a new language feature like `await`
+with a macro and deploy it to all browsers on the
+same day. In fact they already had and were using
+this functionality (`core.async` and `go`) long
+before async `await` was published. See
 [this talk](https://youtu.be/TVJa-V6U-XI?t=1601)
 by David Nolen about it.
 
-Similarly I have previously enjoyed using
+Similarly, I have previously enjoyed using
 `F#`/`OCaml`'s `match` statements, which is not a
-part the core Clojure language. But luckily it can
-be imported as a macro and be used in programs on
-equal grounds as all other Clojure keywords. This
-is not possible in other languages since it is a
-part of the language. See Sam Tobin-Hochstadts
-article on
+part of the core Clojure language. But luckily it
+can be imported as a macro and be used in programs
+on equal grounds as all other Clojure keywords.
+This is not possible in other languages. See Sam
+Tobin-Hochstadts publication about `match` on
 [arXiv.org](https://arxiv.org/pdf/1106.2578.pdf).
 
 ### FP vs OO
 
 Clojure is a functional programming language, but
 it also has polymorphism. There is not a tradeoff
-between Functional Programming and Object Oriented
+between Functional Programming and Object-Oriented
 Programming, since they are orthogonal and can
 therefore easily coexist. This means that if you
 are coming from OO you don't have to leave
@@ -223,19 +221,16 @@ polymorphism behind.
 
 ### Clojure can be used anywhere
 
-Clojure is running on the Java's JVM and is mostly
+Clojure is running on Java's JVM and is mostly
 used for backend services, whereas ClojureScript
 compiles to JavaScript and is mostly used for the
 frontend together with React through a thin
-wrapper called Reagent.
-
-ClojureScript is almost equal to Clojure, unlike
-JavaScript that is distant to Java.
-
-This makes Clojure the most practical language to
-learn, since it obtains the biggest reach of any
-language by combining the reach of Java and
-JavaScript.
+wrapper called Reagent. ClojureScript is almost
+equal to Clojure, unlike JavaScript that is
+distant from Java. This makes Clojure the most
+practical language to learn since it obtains the
+biggest reach of any language by combining the
+reach of Java and JavaScript.
 
 ### Does it deliver?
 
@@ -270,15 +265,15 @@ wanted to
 
 In deciding the tech stack of a startup there are
 more considerations to take into account than what
-made myself productive.
+made me productive.
 
-As mentioned earlier one of the reasons I wanted
+As mentioned earlier one of the reasons, I wanted
 to learn Clojure was because it was a top paying
-technology. But at the same time one might argue
+technology. But at the same time, one might argue
 that this is exactly why I shouldn't base my
 startup on it. Since we will pay a premium for
 hiring Clojure developers. But that would be
-faulty reasoning, since people are not equally
+faulty reasoning since people are not equally
 productive in all languages. Programming languages
 vary in power and so even though we would
 potentially pay more for a Clojure programmer it
@@ -291,7 +286,7 @@ will need to have convincing arguments explaining
 why Clojure is a sensible choice. If they are
 eager to learn it we can then provide the
 necessary training for them to be productive. In
-[this talk](https://www.youtube.com/watch?v=zK9y1nvmft8)
+[this talk](https://www.youtube.com/watch?v=zK9y1nvmft8),
 Marcus Rydberg Founder & CTO of
 [Luminare](https://www.luminaremed.com/) argues
 that since Clojure is such a small language, it is
@@ -299,15 +294,15 @@ easy to learn.
 
 #### Niche benefits
 
-On the other hand the developers already within
+On the other hand, the developers already within
 this niche are very passionate about the language.
 There are a lot of people using it for hobby
 projects, which hope to one day spend their whole
 day developing in Clojure. It might even be easier
-to hire within the community since developer
+to hire within the community since developers
 aren't as picky with other job factors as long as
 they can use a language they like. Many companies
-struggle with hiring developers, since their only
+struggle with hiring developers since their only
 lever is cash compensation. Using a niche
 technology and leveraging its community might be a
 viable strategy for overcoming this struggle.
@@ -325,24 +320,24 @@ scale.
 
 An additional benefit of the Clojure community is
 the fact that Clojure developers are often quite
-senior. Clojure is seldom someones first language,
+senior. Clojure is seldom someones first language
 since one often needs to experience the
 shortcomings of other languages to be motivated to
 overcome the initial learning curve of Clojure.
 This makes the average Clojurian (a person within
-Clojure community) quite knowledgeable. Having a
-high average level of knowledge among employees is
-very beneficial in running a company.
+the Clojure community) quite knowledgeable. Having
+a high average level of knowledge among employees
+is very beneficial in running a company.
 
 #### The backup plan
 
-Of course there are no guarantees, so we still
-wanted to have a backup plan, in case it was
-impossible to hire or train developers. Luckily
-since ClojureScript compiles to JavaScript it is
-possible to use any JavaScript library within it.
-In fact it would be possible to build parts of the
-application in JavaScript and other parts in
+Of course, there are no guarantees in hiring, so
+we still wanted to have a backup plan, in case it
+was impossible to hire or train developers.
+Luckily since ClojureScript compiles to JavaScript
+it is possible to use any JavaScript library
+within it. It would be possible to build parts of
+the application in JavaScript and other parts in
 ClojureScript, due to the tight integration. This
 would not be the ideal solution, but at least we
 could build on top of the existing software
@@ -354,26 +349,25 @@ developers.
 In
 [Beating the Averages](http://www.paulgraham.com/avg.html),
 Paul Graham describes his reasoning behind
-choosing Lisp as core technology for a startup.
-His key ideas are: The average startup fails, so
-**don't be average**. Using a different language
-could be a core differentiator against
+choosing Lisp as the core technology for a
+startup. His key ideas are: The average startup
+fails, so **don't be average**. Using a different
+language could be a core differentiator against
 competitors. His second most key idea is the
 **Blub Paradox**. If Lisp is so great then why
-doesn't everyone use it? It is due to the fact
-that programmers can only compare the power of
-programming languages they know. Learning new
-languages requires changing our habit of thought,
-which is a very slow process. As a result it will
-also take a long time before we adopt the most
-powerful one.
+doesn't everyone use it? It is because programmers
+can only compare the power of programming
+languages they know. Learning new languages
+requires changing a habit of thought, which is a
+very slow process. As a result, it will also take
+a long time before we adopt the most powerful one.
 
 ### Successful startups using Lisp
 
 If this language is so powerful and it has existed
 for so long there must be a lot of great examples
-of companies who has used it successfully. In fact
-there is and here I have listed a few of them. A
+of companies who have used it successfully. There
+is and here I have listed a few of them. A
 surprisingly similar story unfolds for each of
 them. Often it is a small startup beating a much
 larger company in their own game. The Lisp startup
@@ -420,13 +414,13 @@ to Google for
 [700M USD](https://www.google.com/press/ita/)
 in 2010.
 
-A question relevant when a startups grows is
-scaling the technology. But there is no need to
-worry, since Clojure is also used in bigger
+A question relevant when a startup grows is
+scaling the technology. Luckily there is no need
+to worry since Clojure is also used in bigger
 companies such as Facebook, Amazon, Apple,
-Netflix, Google, DBS Bank, Deutsche Bank and
+Netflix, Google, DBS Bank, Deutsche Bank, and
 [many more](https://clojure.org/community/companies).
-For the curios check out more success stories on
+For the curious check out more success stories on
 [clojure.org](https://clojure.org/community/companies)
 or
 [lisp-lang.org](https://lisp-lang.org/success/).
@@ -438,10 +432,10 @@ community doesn't live on StackOverflow, but
 rather on the Clojurians Slack. Here senior
 developers often respond in less than 10 minutes.
 The is again one of the great benefits other
-languages doesn't offer. It has already helped me
+languages don't offer. It has already helped me
 tremendously getting started and solving problems
-and i'm sure that our company could benefit from
-this even as we get more experts in house.
+and I'm sure that our company could benefit from
+this even as we get more experts in-house.
 
 ## Conclusion
 
@@ -490,7 +484,7 @@ choose Clojure for our startup–MoveNation.
 [https://lisp-lang.org/success/](https://lisp-lang.org/success/)
 
 **Thanks** to the following great people for
-providing comments of this:
+reading drafts and providing comments on this:
 
 - Peter Strömberg - Founder of
   [Calva](https://calva.io/)
