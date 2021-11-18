@@ -43,8 +43,13 @@ for a new security-oriented language. So what
 convinced me that Clojure was superior? And why
 did I choose to use it for my startup?
 
-To clarify Clojure is the most popular
-implementation of Lisp and they will be used
+## What is Clojure?
+
+Clojure is the most popular implementation of
+Lisp, which it has been for the past 10 years of
+Lisp's long life of more than 60 years. It
+compiles both to the JVM (Java Virtual Machine)
+and to JavaScript. Clojure and Lisp will be used
 interchangeably throughout this article.
 
 ## Hiring considerations

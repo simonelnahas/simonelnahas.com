@@ -7,10 +7,10 @@ date: '2021-11-17'
 
 Lisp (List Programming) was
 [invented](http://www-formal.stanford.edu/jmc/history/lisp/node2.html#SECTION00020000000000000000)
-by John McCarthy in 1958. Clojure is today's most
-popular implementation of Lisp. Clojure and Lisp
-will be used interchangeably throughout this
-article.
+by John McCarthy in 1958. Clojure compiles both to
+the JVM (Java Virtual Machine) and JavaScript.
+Clojure and Lisp will be used interchangeably
+throughout this article.
 
 ## How I found Clojure
 
