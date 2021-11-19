@@ -101,7 +101,7 @@ export default class MyDocument extends Document {
 
           <meta
             property='twitter:card'
-            content='summary_large_image'
+            content='images/pb.jpg'
           />
           <meta
             property='twitter:url'
