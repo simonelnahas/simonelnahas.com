@@ -98,6 +98,27 @@ export default class MyDocument extends Document {
             property='og:image'
             content='images/pb.jpg'
           />
+          {/* Twitter */}
+          <meta
+            property='twitter:card'
+            content='summary_large_image'
+          />
+          <meta
+            property='twitter:url'
+            content='https://simonelnahas.com/'
+          />
+          <meta
+            property='twitter:title'
+            content='Simon El Nahas'
+          />
+          <meta
+            property='twitter:description'
+            content='Personal website and blog'
+          />
+          <meta
+            property='twitter:image'
+            content='images/pb.jpg'
+          />
         </Head>
         <body>
           <Main />
