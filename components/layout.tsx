@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Simon El Nahas';
-export const siteTitle = 'Simon El Nahas';
+export const siteTitle = name;
 
 export default function Layout({
   children,
@@ -16,24 +16,6 @@ export default function Layout({
     <div className={styles.container}>
       <Head>
         <link rel='icon' href='/favicon.ico' />
-        <title>Simon El Nahas</title>
-
-        <meta
-          name='description'
-          content='Personal website'
-        />
-        <meta
-          property='og:image'
-          content={'images/pb.jpg'}
-        />
-        <meta
-          name='og:title'
-          content={siteTitle}
-        />
-        <meta
-          name='twitter:card'
-          content='summary_large_image'
-        />
       </Head>
       <header className={styles.header}>
         <>
@@ -51,7 +33,6 @@ export default function Layout({
         </>
 
         <div className={styles.flexHorizontal}>
-          {/* TODO: Add flex box */}
           <Link href='/'>About</Link>{' '}
           <Link href='/blog'>Blog</Link>{' '}
           <a
