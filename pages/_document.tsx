@@ -69,6 +69,8 @@ export default class MyDocument extends Document {
             name='theme-color'
             content='#ffffff'
           ></meta>
+
+          {'Meta tags'}
           <meta
             name='title'
             content='Simon El Nahas'
@@ -104,24 +106,12 @@ export default class MyDocument extends Document {
             content='summary'
           />
           <meta
-            property='twitter:url'
-            content='https://simonelnahas.com/'
-          />
-          <meta
-            property='twitter:title'
-            content='Simon El Nahas'
-          />
-          <meta
             property='twitter:creator'
             content='@simonelnahas'
           />
           <meta
-            property='twitter:description'
-            content='Personal website and blog'
-          />
-          <meta
-            property='twitter:image'
-            content='https://simonelnahas.com/_next/image?url=%2Fimages%2Fpb.jpg&w=384&q=75'
+            property='twitter:site'
+            content='@simonelnahas'
           />
         </Head>
         <body>
