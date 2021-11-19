@@ -69,6 +69,56 @@ export default class MyDocument extends Document {
             name='theme-color'
             content='#ffffff'
           ></meta>
+          <meta
+            name='title'
+            content='Simon El Nahas'
+          />
+          <meta
+            name='description'
+            content='Personal website and blog'
+          />
+
+          <meta
+            property='og:type'
+            content='website'
+          />
+          <meta
+            property='og:url'
+            content='https://simonelnahas.com/'
+          />
+          <meta
+            property='og:title'
+            content='Simon El Nahas'
+          />
+          <meta
+            property='og:description'
+            content='Personal website and blog'
+          />
+          <meta
+            property='og:image'
+            content='images/pb.jpg'
+          />
+
+          <meta
+            property='twitter:card'
+            content='summary_large_image'
+          />
+          <meta
+            property='twitter:url'
+            content='https://simonelnahas.com/'
+          />
+          <meta
+            property='twitter:title'
+            content='Simon El Nahas'
+          />
+          <meta
+            property='twitter:description'
+            content='Personal website and blog'
+          />
+          <meta
+            property='twitter:image'
+            content='images/pb.jpg'
+          />
         </Head>
         <body>
           <Main />
