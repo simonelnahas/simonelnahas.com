@@ -101,7 +101,7 @@ export default class MyDocument extends Document {
           {/* Twitter */}
           <meta
             property='twitter:card'
-            content='summary_large_image'
+            content='summary'
           />
           <meta
             property='twitter:url'
@@ -110,6 +110,10 @@ export default class MyDocument extends Document {
           <meta
             property='twitter:title'
             content='Simon El Nahas'
+          />
+          <meta
+            property='twitter:creator'
+            content='@simonelnahas'
           />
           <meta
             property='twitter:description'
