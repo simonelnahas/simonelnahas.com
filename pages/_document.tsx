@@ -96,7 +96,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property='og:image'
-            content='images/pb.jpg'
+            content='https://simonelnahas.com/_next/image?url=%2Fimages%2Fpb.jpg&w=384&q=75'
           />
           {/* Twitter */}
           <meta
@@ -121,7 +121,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property='twitter:image'
-            content='images/pb.jpg'
+            content='https://simonelnahas.com/_next/image?url=%2Fimages%2Fpb.jpg&w=384&q=75'
           />
         </Head>
         <body>
