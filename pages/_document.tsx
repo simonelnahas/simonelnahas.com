@@ -70,7 +70,7 @@ export default class MyDocument extends Document {
             content='#ffffff'
           ></meta>
 
-          {'Meta tags'}
+          {/* Meta tags */}
           <meta
             name='title'
             content='Simon El Nahas'
