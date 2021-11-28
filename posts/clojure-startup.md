@@ -171,15 +171,21 @@ them. Often it is a small startup beating a much
 larger company in their own game. The Lisp startup
 is mentioned last.
 
-- Google Slides vs PowerPoint vs Pitch
+- Google Slides vs PowerPoint vs
+  [Pitch](https://pitch.com/)
 
-- Evernote vs OneNote vs RoamResearch
+- Evernote vs OneNote vs
+  [RoamResearch](https://roamresearch.com/)
 
-- MS Word vs Google Docs vs Grammarly
+- MS Word vs Google Docs vs
+  [Grammarly](https://grammarly.com/)
 
-- Asana vs Shortcut (formerly Clubhouse)
+- Asana vs [Shortcut](https://shortcut.com/)
+  (formerly Clubhouse)
 
-- Expedia vs ITA
+- Expedia vs
+  [ITA](https://www.google.com/flights/) (now
+  Google flights)
 
 > You can write little glue programs in Lisp too
 > (I use it as a desktop calculator), but the
