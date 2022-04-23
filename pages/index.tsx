@@ -20,8 +20,9 @@ export default function Home({ allPostsData }) {
         />
       </Head>
       <section className={utilStyles.headingMd}>
+        <h1>About</h1>
         <p style={{ textAlign: 'center' }}>
-          I simplify
+          I make complex things simple.
         </p>
       </section>
       <section

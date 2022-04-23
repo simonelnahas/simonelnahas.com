@@ -1,0 +1,20 @@
+.sphereHolder {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(131, 131, 131);
+  height: 600px;
+  width: 600px;
+  align-items: center;
+}
+
+.sphere {
+  background: radial-gradient(
+    rgb(254, 254, 254),
+    rgb(243, 242, 242),
+    rgb(184, 184, 184)
+  );
+  padding: 25%;
+  width: 50%;
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+}

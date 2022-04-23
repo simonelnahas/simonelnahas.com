@@ -17,5 +17,16 @@
 .flexHorizontal {
   display: flex;
   justify-content: space-evenly;
-  width: 75%;
+  width: 100%;
+}
+
+.footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer * {
+  margin-left: 8px;
 }

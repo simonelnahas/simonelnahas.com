@@ -3,6 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import {
+  TwitterLink,
+  LinkedinLink,
+} from './social/index.js';
 
 const name = 'Simon El Nahas';
 export const siteTitle = name;
@@ -33,24 +37,17 @@ export default function Layout({
         </>
 
         <div className={styles.flexHorizontal}>
-          <Link href='/'>About</Link>{' '}
-          <Link href='/blog'>Blog</Link>{' '}
-          <a
-            href='https://twitter.com/simonelnahas'
-            target='_blank'
-          >
-            Twitter
-          </a>{' '}
-          <a
-            href='https://www.linkedin.com/in/simonelnahas/'
-            target='_blank'
-          >
-            LinkedIn
-          </a>{' '}
-          <Link href='/fun'>Fun</Link>
+          <Link href='/'>About</Link>
+          <Link href='/blog'>Blog</Link>
+
+          <Link href='/art'>Art</Link>
         </div>
       </header>
       <main>{children}</main>
+      <div className={styles.footer}>
+        <TwitterLink />
+        <LinkedinLink />
+      </div>
     </div>
   );
 }
