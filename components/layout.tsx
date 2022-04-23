@@ -33,21 +33,10 @@ export default function Layout({
         </>
 
         <div className={styles.flexHorizontal}>
-          <Link href='/'>About</Link>{' '}
-          <Link href='/blog'>Blog</Link>{' '}
-          <a
-            href='https://twitter.com/simonelnahas'
-            target='_blank'
-          >
-            Twitter
-          </a>{' '}
-          <a
-            href='https://www.linkedin.com/in/simonelnahas/'
-            target='_blank'
-          >
-            LinkedIn
-          </a>{' '}
+          <Link href='/'>About</Link>
+          <Link href='/blog'>Blog</Link>
           <Link href='/fun'>Fun</Link>
+          <Link href='/art'>Art</Link>
         </div>
       </header>
       <main>{children}</main>
