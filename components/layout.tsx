@@ -9,7 +9,6 @@ import {
 } from './social/index.js';
 
 const name = 'Simon El Nahas';
-export const siteTitle = name;
 
 export default function Layout({
   children,
@@ -20,7 +19,14 @@ export default function Layout({
     <div className={styles.container}>
       <Head>
         <link rel='icon' href='/favicon.ico' />
+        <title>{name}</title>
+        <meta
+          name='description'
+          content="Simon El Nahas' personal website"
+          key='desc'
+        />
       </Head>
+
       <header className={styles.header}>
         <>
           <Image
