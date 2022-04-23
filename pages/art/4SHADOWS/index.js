@@ -17,6 +17,10 @@ export default function index() {
     <Layout>
       <Head>
         <title>4 SHADOWS - Simon El Nahas</title>
+        <meta
+          property='og:image'
+          content='https://simonelnhas.com/art/4SHADOWS/snapshot.png'
+        />
       </Head>
       <br />
       <br />
