@@ -1,6 +1,5 @@
+import styles from './index.module.css';
 import { useState } from 'react';
-import Layout from '../components/layout';
-import styles from './art.module.css';
 
 function greyShadow(x, y) {
   return (
@@ -54,8 +53,7 @@ function boxShadowCss(mousePosition) {
   return allShadows;
 }
 
-export default function Art() {
-  // TODO: make it spread out the close i am
+export default function FourShadows() {
   const defaultCoordinates = { x: -188, y: -188 };
   const [mousePosition, setMousePosition] =
     useState(defaultCoordinates);
@@ -65,28 +63,22 @@ export default function Art() {
       x: e.clientX - rect.left - rect.width / 2,
       y: e.clientY - rect.top - rect.height / 2,
     });
-    console.log(mousePosition);
   };
 
   return (
-    <Layout>
-      <h1> Art</h1>
+    <div
+      className={styles.sphereHolder}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={() =>
+        setMousePosition(defaultCoordinates)
+      }
+    >
       <div
-        className={styles.sphereHolder}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={() =>
-          setMousePosition(defaultCoordinates)
-        }
-      >
-        <div
-          className={styles.sphere}
-          style={{
-            boxShadow: boxShadowCss(
-              mousePosition,
-            ),
-          }}
-        />
-      </div>
-    </Layout>
+        className={styles.sphere}
+        style={{
+          boxShadow: boxShadowCss(mousePosition),
+        }}
+      />
+    </div>
   );
 }
