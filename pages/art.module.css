@@ -15,9 +15,10 @@
   );
   transform: rotateX(0deg) rotateY(0deg) scale(1);
 
-  height: 280px;
-  width: 280px;
-  border-radius: 140px;
+  height: 50%;
+  width: 50%;
+  border-radius: 999px;
+  transition: box-shadow 0.3s;
   /* animation: circle-square 10s ease-in-out
     infinite; */
 }
