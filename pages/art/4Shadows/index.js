@@ -64,7 +64,6 @@ export default function FourShadows() {
       y: e.clientY - rect.top - rect.height / 2,
     });
   };
-
   return (
     <div
       className={styles.sphereHolder}
