@@ -1,7 +1,9 @@
 import Layout from '../../components/layout';
 import styles from './index.module.css';
 
-import FourShadows from './fourShadows/index.js';
+import FourShadows, {
+  info,
+} from './4Shadows/index.js';
 
 function Exhibition({
   children,
@@ -31,12 +33,7 @@ export default function Art() {
   return (
     <Layout>
       <h1> Art</h1>
-      <Exhibition
-        author={me}
-        date='2022-04-23'
-        title='4 shadows'
-        description='Inspired by Robert Irwin. Untitled. 1968. Seen at Copenhagen Contemporary. Interact with the artwork using your computer mouse to create your own unique experience.'
-      >
+      <Exhibition {...info}>
         <FourShadows />
       </Exhibition>
     </Layout>

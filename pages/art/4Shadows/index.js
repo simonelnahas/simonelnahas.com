@@ -82,3 +82,11 @@ export default function FourShadows() {
     </div>
   );
 }
+
+export const info = {
+  author: 'Simon El Nahas',
+  date: '2022-04-23',
+  title: '4 shadows',
+  description:
+    'Inspired by Robert Irwin. Untitled. 1968. Seen at Copenhagen Contemporary. Interact with the artwork using your computermouse to create your own unique experience.',
+};
