@@ -1,0 +1,37 @@
+.sphereHolder {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(131, 131, 131);
+  height: 600px;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+.sphere {
+  background: radial-gradient(
+    rgb(254, 254, 254),
+    rgb(243, 242, 242),
+    rgb(184, 184, 184)
+  );
+  transform: rotateX(0deg) rotateY(0deg) scale(1);
+
+  height: 280px;
+  width: 280px;
+  border-radius: 140px;
+  /* animation: circle-square 10s ease-in-out
+    infinite; */
+}
+
+@keyframes circle-square {
+  0% {
+    border-radius: 0;
+  }
+
+  50% {
+    border-radius: 140px;
+  }
+
+  100% {
+    border-radius: 0;
+  }
+}
