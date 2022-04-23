@@ -20,22 +20,10 @@ export default function Home({ allPostsData }) {
         />
       </Head>
       <section className={utilStyles.headingMd}>
+        <h1>About</h1>
         <p style={{ textAlign: 'center' }}>
           I make complex things simple.
         </p>
-        <a
-          href='https://twitter.com/simonelnahas'
-          target='_blank'
-        >
-          Twitter
-        </a>
-        <br />
-        <a
-          href='https://www.linkedin.com/in/simonelnahas/'
-          target='_blank'
-        >
-          LinkedIn
-        </a>
       </section>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
