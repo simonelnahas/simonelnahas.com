@@ -28,8 +28,6 @@ function Exhibition({
 }
 
 export default function Art() {
-  const me = 'Simon El Nahas';
-
   return (
     <Layout>
       <h1> Art</h1>
