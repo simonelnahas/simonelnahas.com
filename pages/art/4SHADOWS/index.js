@@ -19,7 +19,7 @@ export default function index() {
         <title>4 SHADOWS - Simon El Nahas</title>
         <meta
           property='og:image'
-          content='https://simonelnhas.com/art/4SHADOWS/snapshot.png'
+          content='https://simonelnhas.com/images/4SHADOWS/snapshot.png'
         />
       </Head>
       <br />
