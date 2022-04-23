@@ -10,8 +10,7 @@ export default function Art() {
     <Layout>
       <Head>
         <title>
-          Artwork | Simon El Nahas | Personal
-          Website
+          Art | Simon El Nahas | Personal Website
         </title>
         <meta
           name='description'
