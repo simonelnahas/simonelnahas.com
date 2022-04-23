@@ -3,7 +3,7 @@ import styles from './index.module.css';
 
 import FourShadows, {
   info,
-} from './4SHADOWS/index.js';
+} from './4shadows/index.js';
 
 function Exhibition({
   children,
